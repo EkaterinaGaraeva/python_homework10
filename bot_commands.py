@@ -213,10 +213,11 @@ def input_new_student_class(update: Update, context: CallbackContext):
     global new_student_data
     new_student_data.append(new_class_id)
     update.message.reply_text(f'Новые данные ученика: \
-                                \nФамилия: {new_student_data[0]} \
-                                \nИмя: {new_student_data[1]} \
-                                \nДата рождения: {new_student_data[2]} \
-                                \nКласс: {new_student_data[3]} \
+                                \nid: {new_student_data[0]} \
+                                \nФамилия: {new_student_data[1]} \
+                                \nИмя: {new_student_data[2]} \
+                                \nДата рождения: {new_student_data[3]} \
+                                \nКласс: {new_student_data[4]} \
                                 \nИзменить? Да/Нет')
     return 'change'
 
